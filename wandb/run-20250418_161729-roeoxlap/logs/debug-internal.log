@@ -1,0 +1,15 @@
+{"time":"2025-04-18T16:17:29.534512687-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/scratch/rg4827/hw/dl2/wandb/run-20250418_161729-roeoxlap/logs/debug-core.log"}
+{"time":"2025-04-18T16:17:29.723632657-04:00","level":"INFO","msg":"created new stream","id":"roeoxlap"}
+{"time":"2025-04-18T16:17:29.723725639-04:00","level":"INFO","msg":"stream: started","id":"roeoxlap"}
+{"time":"2025-04-18T16:17:29.723796806-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"roeoxlap"}
+{"time":"2025-04-18T16:17:29.7238897-04:00","level":"INFO","msg":"sender: started","stream_id":"roeoxlap"}
+{"time":"2025-04-18T16:17:29.723956731-04:00","level":"INFO","msg":"handler: started","stream_id":"roeoxlap"}
+{"time":"2025-04-18T16:17:29.994366401-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-18T16:24:20.344467234-04:00","level":"INFO","msg":"stream: closing","id":"roeoxlap"}
+{"time":"2025-04-18T16:24:20.344518993-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-18T16:24:20.345351864-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-18T16:24:20.708530557-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-18T16:24:20.833191207-04:00","level":"INFO","msg":"handler: closed","stream_id":"roeoxlap"}
+{"time":"2025-04-18T16:24:20.833248899-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"roeoxlap"}
+{"time":"2025-04-18T16:24:20.833264609-04:00","level":"INFO","msg":"sender: closed","stream_id":"roeoxlap"}
+{"time":"2025-04-18T16:24:20.909851317-04:00","level":"INFO","msg":"stream: closed","id":"roeoxlap"}

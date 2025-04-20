@@ -1,0 +1,15 @@
+{"time":"2025-04-18T17:03:57.012253981-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/scratch/rg4827/hw/dl2/wandb/run-20250418_170356-ak86hc1l/logs/debug-core.log"}
+{"time":"2025-04-18T17:03:57.282116265-04:00","level":"INFO","msg":"created new stream","id":"ak86hc1l"}
+{"time":"2025-04-18T17:03:57.282191887-04:00","level":"INFO","msg":"stream: started","id":"ak86hc1l"}
+{"time":"2025-04-18T17:03:57.282236749-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"ak86hc1l"}
+{"time":"2025-04-18T17:03:57.282325252-04:00","level":"INFO","msg":"handler: started","stream_id":"ak86hc1l"}
+{"time":"2025-04-18T17:03:57.282453746-04:00","level":"INFO","msg":"sender: started","stream_id":"ak86hc1l"}
+{"time":"2025-04-18T17:03:57.471950284-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-18T17:06:00.303739837-04:00","level":"INFO","msg":"stream: closing","id":"ak86hc1l"}
+{"time":"2025-04-18T17:06:00.30382893-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-18T17:06:00.310557685-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-18T17:06:00.959757665-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-18T17:06:01.100853233-04:00","level":"INFO","msg":"handler: closed","stream_id":"ak86hc1l"}
+{"time":"2025-04-18T17:06:01.100883384-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ak86hc1l"}
+{"time":"2025-04-18T17:06:01.100902374-04:00","level":"INFO","msg":"sender: closed","stream_id":"ak86hc1l"}
+{"time":"2025-04-18T17:06:01.101195125-04:00","level":"INFO","msg":"stream: closed","id":"ak86hc1l"}

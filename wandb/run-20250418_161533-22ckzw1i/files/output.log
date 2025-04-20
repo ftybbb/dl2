@@ -1,0 +1,35 @@
+ 26%|███████████████████████████████▌                                                                                        | 315/1200 [01:33<03:55,  3.75it/s]Traceback (most recent call last):
+{'loss': 1.3997, 'grad_norm': 1.9581410884857178, 'learning_rate': 4.5875000000000005e-06, 'epoch': 0.01}
+  File "/scratch/rg4827/hw/dl2/starter.py", line 150, in <module>                                                                                               
+{'eval_loss': 1.3919899463653564, 'eval_accuracy': 0.23125, 'eval_runtime': 4.0787, 'eval_samples_per_second': 156.911, 'eval_steps_per_second': 2.452, 'epoch': 0.01}
+{'loss': 1.3904, 'grad_norm': 1.66938316822052, 'learning_rate': 4.170833333333333e-06, 'epoch': 0.03}
+{'eval_loss': 1.3919646739959717, 'eval_accuracy': 0.23125, 'eval_runtime': 4.1148, 'eval_samples_per_second': 155.537, 'eval_steps_per_second': 2.43, 'epoch': 0.03}
+{'loss': 1.3996, 'grad_norm': 2.512924909591675, 'learning_rate': 3.754166666666667e-06, 'epoch': 0.04}
+{'eval_loss': 1.3919219970703125, 'eval_accuracy': 0.2296875, 'eval_runtime': 4.1779, 'eval_samples_per_second': 153.189, 'eval_steps_per_second': 2.394, 'epoch': 0.04}
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2565, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/scratch/rg4827/hw/dl2/starter.py", line 150, in <module>
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2565, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x14cc59218280>
+Traceback (most recent call last):
+  File "/home/rg4827/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 94, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/home/rg4827/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 226, in teardown
+    self._router.join()
+  File "/home/rg4827/.local/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt:

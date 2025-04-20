@@ -1,0 +1,18 @@
+{"time":"2025-04-18T17:17:43.235525202-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/scratch/rg4827/hw/dl2/wandb/run-20250418_171743-6nkt4u28/logs/debug-core.log"}
+{"time":"2025-04-18T17:17:43.354755806-04:00","level":"INFO","msg":"created new stream","id":"6nkt4u28"}
+{"time":"2025-04-18T17:17:43.354821138-04:00","level":"INFO","msg":"stream: started","id":"6nkt4u28"}
+{"time":"2025-04-18T17:17:43.354845969-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"6nkt4u28"}
+{"time":"2025-04-18T17:17:43.354895301-04:00","level":"INFO","msg":"handler: started","stream_id":"6nkt4u28"}
+{"time":"2025-04-18T17:17:43.355006844-04:00","level":"INFO","msg":"sender: started","stream_id":"6nkt4u28"}
+{"time":"2025-04-18T17:17:43.526525927-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-18T17:25:18.820354852-04:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ran-g-new-york-university/huggingface/6nkt4u28/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-04-18T17:25:26.169512683-04:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ran-g-new-york-university/huggingface/6nkt4u28/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-04-18T17:25:36.062717203-04:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ran-g-new-york-university/huggingface/6nkt4u28/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-04-18T17:44:25.745334625-04:00","level":"INFO","msg":"stream: closing","id":"6nkt4u28"}
+{"time":"2025-04-18T17:44:25.745412128-04:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-18T17:44:25.746700982-04:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-18T17:44:26.101715289-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-18T17:44:26.334429987-04:00","level":"INFO","msg":"handler: closed","stream_id":"6nkt4u28"}
+{"time":"2025-04-18T17:44:26.334497579-04:00","level":"INFO","msg":"sender: closed","stream_id":"6nkt4u28"}
+{"time":"2025-04-18T17:44:26.334491969-04:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6nkt4u28"}
+{"time":"2025-04-18T17:44:26.334780959-04:00","level":"INFO","msg":"stream: closed","id":"6nkt4u28"}

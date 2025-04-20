@@ -1,0 +1,32 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1200/1200 [05:59<00:00,  3.34it/s]
+{'loss': 1.3921, 'grad_norm': 2.2680788040161133, 'learning_rate': 0.00045875, 'epoch': 0.01}
+Downloading builder script: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 4.20k/4.20k [00:00<00:00, 8.14MB/s]
+{'eval_loss': 1.3861533403396606, 'eval_accuracy': 0.2421875, 'eval_runtime': 4.1397, 'eval_samples_per_second': 154.6, 'eval_steps_per_second': 2.416, 'epoch': 0.01}
+{'loss': 1.3869, 'grad_norm': 1.8623037338256836, 'learning_rate': 0.0004170833333333333, 'epoch': 0.03}
+{'eval_loss': 1.3861446380615234, 'eval_accuracy': 0.2140625, 'eval_runtime': 4.1405, 'eval_samples_per_second': 154.572, 'eval_steps_per_second': 2.415, 'epoch': 0.03}
+{'loss': 1.3901, 'grad_norm': 2.2261319160461426, 'learning_rate': 0.0003754166666666667, 'epoch': 0.04}
+{'eval_loss': 1.386056661605835, 'eval_accuracy': 0.2171875, 'eval_runtime': 4.1497, 'eval_samples_per_second': 154.227, 'eval_steps_per_second': 2.41, 'epoch': 0.04}
+{'loss': 1.3883, 'grad_norm': 1.8059417009353638, 'learning_rate': 0.00033375, 'epoch': 0.05}
+{'eval_loss': 1.3857496976852417, 'eval_accuracy': 0.2328125, 'eval_runtime': 4.1776, 'eval_samples_per_second': 153.199, 'eval_steps_per_second': 2.394, 'epoch': 0.05}
+{'loss': 1.3863, 'grad_norm': 2.7983651161193848, 'learning_rate': 0.0002920833333333333, 'epoch': 0.07}
+{'eval_loss': 1.3856878280639648, 'eval_accuracy': 0.2609375, 'eval_runtime': 4.2109, 'eval_samples_per_second': 151.987, 'eval_steps_per_second': 2.375, 'epoch': 0.07}
+{'loss': 1.3858, 'grad_norm': 2.2769408226013184, 'learning_rate': 0.0002504166666666667, 'epoch': 0.08}
+{'eval_loss': 1.3860830068588257, 'eval_accuracy': 0.25625, 'eval_runtime': 4.2181, 'eval_samples_per_second': 151.727, 'eval_steps_per_second': 2.371, 'epoch': 0.08}
+{'loss': 1.3859, 'grad_norm': 1.249434232711792, 'learning_rate': 0.00020875, 'epoch': 0.09}
+{'eval_loss': 1.385337233543396, 'eval_accuracy': 0.28125, 'eval_runtime': 4.2212, 'eval_samples_per_second': 151.616, 'eval_steps_per_second': 2.369, 'epoch': 0.09}
+{'loss': 1.3867, 'grad_norm': 1.6909997463226318, 'learning_rate': 0.00016708333333333335, 'epoch': 0.11}
+{'eval_loss': 1.3853819370269775, 'eval_accuracy': 0.2359375, 'eval_runtime': 4.2237, 'eval_samples_per_second': 151.527, 'eval_steps_per_second': 2.368, 'epoch': 0.11}
+{'loss': 1.3855, 'grad_norm': 2.3645951747894287, 'learning_rate': 0.0001254166666666667, 'epoch': 0.12}
+{'eval_loss': 1.3851398229599, 'eval_accuracy': 0.253125, 'eval_runtime': 4.2233, 'eval_samples_per_second': 151.541, 'eval_steps_per_second': 2.368, 'epoch': 0.12}
+{'loss': 1.3871, 'grad_norm': 1.2647020816802979, 'learning_rate': 8.375e-05, 'epoch': 0.13}
+{'eval_loss': 1.3851048946380615, 'eval_accuracy': 0.2578125, 'eval_runtime': 4.2169, 'eval_samples_per_second': 151.769, 'eval_steps_per_second': 2.371, 'epoch': 0.13}
+{'loss': 1.3879, 'grad_norm': 1.3888777494430542, 'learning_rate': 4.208333333333334e-05, 'epoch': 0.15}
+{'eval_loss': 1.3852919340133667, 'eval_accuracy': 0.2390625, 'eval_runtime': 4.2451, 'eval_samples_per_second': 150.762, 'eval_steps_per_second': 2.356, 'epoch': 0.15}
+{'loss': 1.3864, 'grad_norm': 1.635433316230774, 'learning_rate': 4.166666666666667e-07, 'epoch': 0.16}
+{'eval_loss': 1.3853509426116943, 'eval_accuracy': 0.23125, 'eval_runtime': 4.2707, 'eval_samples_per_second': 149.858, 'eval_steps_per_second': 2.342, 'epoch': 0.16}
+{'train_runtime': 360.7268, 'train_samples_per_second': 53.226, 'train_steps_per_second': 3.327, 'train_loss': 1.3874004236857096, 'epoch': 0.16}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 80/80 [00:04<00:00, 19.14it/s]
+Evaluation Metric: {'accuracy': 0.23125}
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 8000/8000 [00:04<00:00, 1777.80 examples/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:40<00:00, 25.00it/s]
+Inference complete. Predictions saved to inference_output.csv

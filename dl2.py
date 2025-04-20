@@ -14,23 +14,31 @@ import argparse
 import time
 import json
 import csv
+import torch.nn as nn
 # -----------------------------
 # 2. Use GPU if available
 # -----------------------------
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
+
+
 if __name__ == "__main__":
     date_time = time.strftime("%Y%m%d_%H%M%S")
     parser = argparse.ArgumentParser()
     parser.add_argument("--task", type=str, default="train")
+    parser.add_argument('--ckpt', type=str, default="")
     parser.add_argument('--r', type=int, default=8)
-    parser.add_argument('--alpha', type=int, default=32)
+    parser.add_argument('--alpha', type=int, default=16)
     parser.add_argument('--dropout', type=float, default=0.1)
-    parser.add_argument('--lr', type=float, default=1e-3)
-    parser.add_argument('--bs', type=int, default=64)
+    parser.add_argument('--lr', type=float, default=1e-3) #2e-4
+    parser.add_argument('--bs', type=int, default=16)
     parser.add_argument('--epochs', type=int, default=3)
     parser.add_argument('--weight_decay', type=float, default=0.01)
+    parser.add_argument('--max_length', type=int, default=128)
+    parser.add_argument('--nonlinear', action='store_true')
+    parser.add_argument('--target', type=str, default="query,value")
+    parser.add_argument('--scheduler', type=str, default="constant")
     args = parser.parse_args()
     
     if args.task == "train":
@@ -40,9 +48,19 @@ if __name__ == "__main__":
         # -----------------------------
         dataset = load_dataset("ag_news")
         tokenizer = AutoTokenizer.from_pretrained("roberta-base")
+        
+        def analyze_dataset(dataset, tokenizer):
+            lengths = [len(tokenizer(text)['input_ids']) for text in dataset['text']]
+            print(f"Min length: {min(lengths)}")
+            print(f"Max length: {max(lengths)}")
+            print(f"Average length: {sum(lengths) / len(lengths)}")
+            print(f'90% length: {sorted(lengths)[int(len(lengths) * 0.9)]}')
+            print(f'99% length: {sorted(lengths)[int(len(lengths) * 0.95)]}')
+            print(f"Median length: {sorted(lengths)[len(lengths) // 2]}")
+            
 
         def tokenize_function(examples):
-            return tokenizer(examples["text"], truncation=True, padding="max_length", max_length=128)
+            return tokenizer(examples["text"], truncation=True, padding="max_length", max_length=args.max_length)
 
         tokenized_dataset = dataset.map(tokenize_function, batched=True)
         tokenized_dataset = tokenized_dataset.rename_column("label", "labels")
@@ -53,21 +71,55 @@ if __name__ == "__main__":
         # 4. Load RoBERTa model with LoRA adapters
         # -----------------------------
         model = AutoModelForSequenceClassification.from_pretrained("roberta-base", num_labels=4)
+        # target_modules = args.target.split(",")
+        # lora_config1 = LoraConfig(
+        #     r=8,
+        #     lora_alpha=16,
+        #     target_modules=["query"],
+        #     lora_dropout=0.1,
+        #     bias="none",
+        #     task_type=TaskType.SEQ_CLS
+        # )
+        # lora_config2 = LoraConfig(
+        #     r=14,
+        #     lora_alpha=28,
+        #     target_modules=["value"],
+        #     lora_dropout=0.1,
+        #     bias="none",
+        #     task_type=TaskType.SEQ_CLS
+        # )
 
+        # model = get_peft_model(model, lora_config1)
+        # model = get_peft_model(model, lora_config2)
+        
+        # one config
         lora_config = LoraConfig(
             r=args.r,
             lora_alpha=args.alpha,
-            target_modules=["query", "value"],
+            target_modules=args.target.split(","),
             lora_dropout=args.dropout,
             bias="none",
             task_type=TaskType.SEQ_CLS
         )
-
         model = get_peft_model(model, lora_config)
         model.to(device)
+        if args.nonlinear:
+            hidden_dim = model.classifier.dense.in_features
+            print(f"Hidden dimension: {hidden_dim}")
+            model.classifier = nn.Sequential(
+                nn.Dropout(0.3),
+                nn.Linear(hidden_dim, 128),
+                nn.ReLU(),
+                nn.Dropout(0.1),
+                nn.Linear(128, 4)
+            )
+        
+        
         model.print_trainable_parameters()
         trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
         assert trainable_params <= 1000000, "Too many trainable parameters"
+        
+        
 
         # -----------------------------
         # 5. Define training arguments
@@ -79,7 +131,7 @@ if __name__ == "__main__":
             save_strategy="epoch",
             fp16=True,
             learning_rate=args.lr,
-            lr_scheduler_type="cosine",
+            lr_scheduler_type=args.scheduler,
             warmup_ratio=0.1,
             label_smoothing_factor=0.1,
             per_device_train_batch_size=args.bs,
@@ -139,7 +191,7 @@ if __name__ == "__main__":
         from torch.utils.data import DataLoader
         tokenizer = AutoTokenizer.from_pretrained("roberta-base")
         base_model = AutoModelForSequenceClassification.from_pretrained("roberta-base", num_labels=4)
-        model = PeftModel.from_pretrained(base_model, "./results/checkpoint-22500")
+        model = PeftModel.from_pretrained(base_model, args.ckpt)
         model.to(device)
         model.eval()
 

@@ -1,0 +1,66 @@
+  8%|███████████▎                                                                                                                            | 100/1200 [00:07<01:19, 13.78it/s]Traceback (most recent call last):
+{'loss': 0.6291, 'grad_norm': 1.1453665494918823, 'learning_rate': 0.00027525, 'epoch': 0.01}
+  File "/scratch/rg4827/hw/dl2/test2.py", line 106, in <module>                                                                                  | 3/10 [00:00<00:00, 14.31it/s]
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2627, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 3096, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 3045, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 4154, in evaluate
+    output = eval_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 4370, in evaluation_loop
+    logits = self.accelerator.pad_across_processes(logits, dim=1, pad_index=-100)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/accelerator.py", line 2813, in pad_across_processes
+    return pad_across_processes(tensor, dim=dim, pad_index=pad_index, pad_first=pad_first)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/utils/operations.py", line 403, in wrapper
+    return function(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/utils/operations.py", line 673, in pad_across_processes
+    return recursively_apply(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/utils/operations.py", line 126, in recursively_apply
+    return func(data, *args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/utils/operations.py", line 653, in _pad_across_processes
+    size = torch.tensor(tensor.shape, device=tensor.device)[None]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/scratch/rg4827/hw/dl2/test2.py", line 106, in <module>
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2627, in _inner_training_loop
+    self._maybe_log_save_evaluate(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 3096, in _maybe_log_save_evaluate
+    metrics = self._evaluate(trial, ignore_keys_for_eval)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 3045, in _evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 4154, in evaluate
+    output = eval_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 4370, in evaluation_loop
+    logits = self.accelerator.pad_across_processes(logits, dim=1, pad_index=-100)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/accelerator.py", line 2813, in pad_across_processes
+    return pad_across_processes(tensor, dim=dim, pad_index=pad_index, pad_first=pad_first)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/utils/operations.py", line 403, in wrapper
+    return function(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/utils/operations.py", line 673, in pad_across_processes
+    return recursively_apply(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/utils/operations.py", line 126, in recursively_apply
+    return func(data, *args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/accelerate/utils/operations.py", line 653, in _pad_across_processes
+    size = torch.tensor(tensor.shape, device=tensor.device)[None]
+KeyboardInterrupt
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x14ac727a79a0>
+Traceback (most recent call last):
+  File "/home/rg4827/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 94, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/home/rg4827/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 226, in teardown
+    self._router.join()
+  File "/home/rg4827/.local/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt:

@@ -1,0 +1,33 @@
+ 18%|█████████████████████▎                                                                                                  | 213/1200 [01:03<04:39,  3.53it/s]Traceback (most recent call last):
+{'loss': 1.3958, 'grad_norm': 2.45642352104187, 'learning_rate': 0.00045875, 'epoch': 0.01}
+  File "/scratch/rg4827/hw/dl2/train.py", line 164, in <module>                                                                                                 
+{'eval_loss': 1.3885576725006104, 'eval_accuracy': 0.2265625, 'eval_runtime': 4.1222, 'eval_samples_per_second': 155.257, 'eval_steps_per_second': 2.426, 'epoch': 0.01}
+{'loss': 1.3893, 'grad_norm': 1.9708442687988281, 'learning_rate': 0.0004170833333333333, 'epoch': 0.03}
+{'eval_loss': 1.3865892887115479, 'eval_accuracy': 0.2265625, 'eval_runtime': 4.1203, 'eval_samples_per_second': 155.327, 'eval_steps_per_second': 2.427, 'epoch': 0.03}
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2565, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/scratch/rg4827/hw/dl2/train.py", line 164, in <module>
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2565, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x14fba8292e60>
+Traceback (most recent call last):
+  File "/home/rg4827/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 94, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/home/rg4827/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 226, in teardown
+    self._router.join()
+  File "/home/rg4827/.local/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt:

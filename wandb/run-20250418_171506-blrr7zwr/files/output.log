@@ -1,0 +1,24 @@
+  5%|███████▏                                                                                                                                | 492/9325 [02:07<35:43,  4.12it/s]Traceback (most recent call last):
+{'loss': 0.5088, 'grad_norm': 2.979339599609375, 'learning_rate': 0.0002968150134048257, 'epoch': 0.05}
+  File "/scratch/rg4827/hw/dl2/test2.py", line 106, in <module>                                                                                                                 
+{'eval_loss': 0.3256343603134155, 'eval_accuracy': 0.890625, 'eval_runtime': 1.1478, 'eval_samples_per_second': 557.58, 'eval_steps_per_second': 8.712, 'epoch': 0.05}
+{'loss': 0.2854, 'grad_norm': 3.136949300765991, 'learning_rate': 0.000293597855227882, 'epoch': 0.11}
+{'eval_loss': 0.3024540841579437, 'eval_accuracy': 0.8984375, 'eval_runtime': 1.1455, 'eval_samples_per_second': 558.725, 'eval_steps_per_second': 8.73, 'epoch': 0.11}
+{'loss': 0.2746, 'grad_norm': 2.4143214225769043, 'learning_rate': 0.0002903806970509383, 'epoch': 0.16}
+{'eval_loss': 0.2953472137451172, 'eval_accuracy': 0.9015625, 'eval_runtime': 1.1953, 'eval_samples_per_second': 535.416, 'eval_steps_per_second': 8.366, 'epoch': 0.16}
+{'loss': 0.2771, 'grad_norm': 0.45710745453834534, 'learning_rate': 0.0002871635388739946, 'epoch': 0.21}
+{'eval_loss': 0.28091850876808167, 'eval_accuracy': 0.9078125, 'eval_runtime': 1.1388, 'eval_samples_per_second': 561.98, 'eval_steps_per_second': 8.781, 'epoch': 0.21}
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2565, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/scratch/rg4827/hw/dl2/test2.py", line 106, in <module>
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2565, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt

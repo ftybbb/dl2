@@ -1,0 +1,64 @@
+  0%|                                                                                                                                  | 0/1200 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/scratch/rg4827/hw/dl2/test2.py", line 117, in <module>
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/peft/peft_model.py", line 1559, in forward
+    return self.base_model(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/peft/peft_model.py", line 1559, in forward
+    return self.base_model(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+TypeError: RobertaForSequenceClassification.forward() got an unexpected keyword argument 'num_items_in_batch'
+Traceback (most recent call last):
+  File "/scratch/rg4827/hw/dl2/test2.py", line 117, in <module>
+    result = peft_lora_finetuning_trainer.train()
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2245, in train
+    return inner_training_loop(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 2560, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 3736, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/transformers/trainer.py", line 3801, in compute_loss
+    outputs = model(**inputs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/peft/peft_model.py", line 1559, in forward
+    return self.base_model(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/peft/peft_model.py", line 1559, in forward
+    return self.base_model(
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/vast/rg4827/miniconda3/envs/dl/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+TypeError: RobertaForSequenceClassification.forward() got an unexpected keyword argument 'num_items_in_batch'

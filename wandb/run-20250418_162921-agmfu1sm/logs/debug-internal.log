@@ -1,0 +1,7 @@
+{"time":"2025-04-18T16:29:21.345480983-04:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/scratch/rg4827/hw/dl2/wandb/run-20250418_162921-agmfu1sm/logs/debug-core.log"}
+{"time":"2025-04-18T16:29:21.478680271-04:00","level":"INFO","msg":"created new stream","id":"agmfu1sm"}
+{"time":"2025-04-18T16:29:21.478753515-04:00","level":"INFO","msg":"stream: started","id":"agmfu1sm"}
+{"time":"2025-04-18T16:29:21.478858533-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"agmfu1sm"}
+{"time":"2025-04-18T16:29:21.478937594-04:00","level":"INFO","msg":"handler: started","stream_id":"agmfu1sm"}
+{"time":"2025-04-18T16:29:21.478941226-04:00","level":"INFO","msg":"sender: started","stream_id":"agmfu1sm"}
+{"time":"2025-04-18T16:29:21.663118929-04:00","level":"INFO","msg":"Starting system monitor"}

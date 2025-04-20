@@ -1,0 +1,31 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1200/1200 [06:14<00:00,  3.21it/s]
+{'loss': 0.7465, 'grad_norm': 0.5257173180580139, 'learning_rate': 0.00027525, 'epoch': 0.01}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 80/80 [00:04<00:00, 18.66it/s]
+{'eval_loss': 0.3458018898963928, 'eval_accuracy': 0.8953125, 'eval_runtime': 4.2074, 'eval_samples_per_second': 152.112, 'eval_steps_per_second': 2.377, 'epoch': 0.01}
+{'loss': 0.3608, 'grad_norm': 5.124632835388184, 'learning_rate': 0.00025025, 'epoch': 0.03}
+{'eval_loss': 0.34794700145721436, 'eval_accuracy': 0.9, 'eval_runtime': 4.2246, 'eval_samples_per_second': 151.494, 'eval_steps_per_second': 2.367, 'epoch': 0.03}
+{'loss': 0.3369, 'grad_norm': 2.5453310012817383, 'learning_rate': 0.00022524999999999997, 'epoch': 0.04}
+{'eval_loss': 0.3218678832054138, 'eval_accuracy': 0.896875, 'eval_runtime': 4.2831, 'eval_samples_per_second': 149.423, 'eval_steps_per_second': 2.335, 'epoch': 0.04}
+{'loss': 0.2904, 'grad_norm': 3.0165183544158936, 'learning_rate': 0.00020025, 'epoch': 0.05}
+{'eval_loss': 0.3224623203277588, 'eval_accuracy': 0.8984375, 'eval_runtime': 4.3057, 'eval_samples_per_second': 148.641, 'eval_steps_per_second': 2.323, 'epoch': 0.05}
+{'loss': 0.2907, 'grad_norm': 3.1290318965911865, 'learning_rate': 0.00017524999999999998, 'epoch': 0.07}
+{'eval_loss': 0.3091677725315094, 'eval_accuracy': 0.9078125, 'eval_runtime': 4.3108, 'eval_samples_per_second': 148.464, 'eval_steps_per_second': 2.32, 'epoch': 0.07}
+{'loss': 0.2729, 'grad_norm': 1.5256587266921997, 'learning_rate': 0.00015025, 'epoch': 0.08}
+{'eval_loss': 0.2885153889656067, 'eval_accuracy': 0.9046875, 'eval_runtime': 4.3193, 'eval_samples_per_second': 148.174, 'eval_steps_per_second': 2.315, 'epoch': 0.08}
+{'loss': 0.2739, 'grad_norm': 1.8695951700210571, 'learning_rate': 0.00012524999999999998, 'epoch': 0.09}
+{'eval_loss': 0.28607070446014404, 'eval_accuracy': 0.9078125, 'eval_runtime': 4.3588, 'eval_samples_per_second': 146.83, 'eval_steps_per_second': 2.294, 'epoch': 0.09}
+{'loss': 0.279, 'grad_norm': 2.2110888957977295, 'learning_rate': 0.00010025, 'epoch': 0.11}
+{'eval_loss': 0.2896157205104828, 'eval_accuracy': 0.9046875, 'eval_runtime': 4.3647, 'eval_samples_per_second': 146.631, 'eval_steps_per_second': 2.291, 'epoch': 0.11}
+{'loss': 0.2593, 'grad_norm': 4.613762378692627, 'learning_rate': 7.525e-05, 'epoch': 0.12}
+{'eval_loss': 0.2850645184516907, 'eval_accuracy': 0.909375, 'eval_runtime': 4.3156, 'eval_samples_per_second': 148.3, 'eval_steps_per_second': 2.317, 'epoch': 0.12}
+{'loss': 0.2458, 'grad_norm': 3.052602767944336, 'learning_rate': 5.025e-05, 'epoch': 0.13}
+{'eval_loss': 0.28884539008140564, 'eval_accuracy': 0.915625, 'eval_runtime': 4.3468, 'eval_samples_per_second': 147.235, 'eval_steps_per_second': 2.301, 'epoch': 0.13}
+{'loss': 0.2606, 'grad_norm': 4.214904308319092, 'learning_rate': 2.5249999999999997e-05, 'epoch': 0.15}
+{'eval_loss': 0.28418073058128357, 'eval_accuracy': 0.9046875, 'eval_runtime': 4.3411, 'eval_samples_per_second': 147.43, 'eval_steps_per_second': 2.304, 'epoch': 0.15}
+{'loss': 0.2768, 'grad_norm': 2.3635761737823486, 'learning_rate': 2.5e-07, 'epoch': 0.16}
+{'eval_loss': 0.27750492095947266, 'eval_accuracy': 0.9125, 'eval_runtime': 4.3519, 'eval_samples_per_second': 147.061, 'eval_steps_per_second': 2.298, 'epoch': 0.16}
+{'train_runtime': 375.4685, 'train_samples_per_second': 51.136, 'train_steps_per_second': 3.196, 'train_loss': 0.3244715118408203, 'epoch': 0.16}
+Evaluation Metric: {'accuracy': 0.9125}
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 8000/8000 [00:04<00:00, 1761.77 examples/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:41<00:00, 24.31it/s]
+Inference complete. Predictions saved to inference_output.csv

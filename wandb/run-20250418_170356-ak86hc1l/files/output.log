@@ -1,0 +1,31 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1200/1200 [01:42<00:00, 11.71it/s]
+{'loss': 0.643, 'grad_norm': 1.2828385829925537, 'learning_rate': 0.00027525, 'epoch': 0.01}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 80/80 [00:01<00:00, 56.03it/s]
+{'eval_loss': 0.32563185691833496, 'eval_accuracy': 0.909375, 'eval_runtime': 1.2163, 'eval_samples_per_second': 526.174, 'eval_steps_per_second': 8.221, 'epoch': 0.01}
+{'loss': 0.3678, 'grad_norm': 3.7061033248901367, 'learning_rate': 0.00025025, 'epoch': 0.03}
+{'eval_loss': 0.33085131645202637, 'eval_accuracy': 0.90625, 'eval_runtime': 1.1762, 'eval_samples_per_second': 544.117, 'eval_steps_per_second': 8.502, 'epoch': 0.03}
+{'loss': 0.3306, 'grad_norm': 3.218970775604248, 'learning_rate': 0.00022524999999999997, 'epoch': 0.04}
+{'eval_loss': 0.3136153519153595, 'eval_accuracy': 0.896875, 'eval_runtime': 1.1582, 'eval_samples_per_second': 552.582, 'eval_steps_per_second': 8.634, 'epoch': 0.04}
+{'loss': 0.2869, 'grad_norm': 3.3081164360046387, 'learning_rate': 0.00020025, 'epoch': 0.05}
+{'eval_loss': 0.31597891449928284, 'eval_accuracy': 0.903125, 'eval_runtime': 1.1516, 'eval_samples_per_second': 555.725, 'eval_steps_per_second': 8.683, 'epoch': 0.05}
+{'loss': 0.2736, 'grad_norm': 5.342214107513428, 'learning_rate': 0.00017524999999999998, 'epoch': 0.07}
+{'eval_loss': 0.3074006140232086, 'eval_accuracy': 0.9078125, 'eval_runtime': 1.1591, 'eval_samples_per_second': 552.166, 'eval_steps_per_second': 8.628, 'epoch': 0.07}
+{'loss': 0.2545, 'grad_norm': 2.9352610111236572, 'learning_rate': 0.00015025, 'epoch': 0.08}
+{'eval_loss': 0.30434682965278625, 'eval_accuracy': 0.9078125, 'eval_runtime': 1.1414, 'eval_samples_per_second': 560.706, 'eval_steps_per_second': 8.761, 'epoch': 0.08}
+{'loss': 0.2617, 'grad_norm': 2.246004104614258, 'learning_rate': 0.00012524999999999998, 'epoch': 0.09}
+{'eval_loss': 0.29871731996536255, 'eval_accuracy': 0.896875, 'eval_runtime': 1.1567, 'eval_samples_per_second': 553.293, 'eval_steps_per_second': 8.645, 'epoch': 0.09}
+{'loss': 0.284, 'grad_norm': 3.113103151321411, 'learning_rate': 0.00010025, 'epoch': 0.11}
+{'eval_loss': 0.28739991784095764, 'eval_accuracy': 0.90625, 'eval_runtime': 1.1485, 'eval_samples_per_second': 557.252, 'eval_steps_per_second': 8.707, 'epoch': 0.11}
+{'loss': 0.2498, 'grad_norm': 5.138429641723633, 'learning_rate': 7.525e-05, 'epoch': 0.12}
+{'eval_loss': 0.2946406304836273, 'eval_accuracy': 0.8984375, 'eval_runtime': 1.1523, 'eval_samples_per_second': 555.42, 'eval_steps_per_second': 8.678, 'epoch': 0.12}
+{'loss': 0.2361, 'grad_norm': 4.4571733474731445, 'learning_rate': 5.025e-05, 'epoch': 0.13}
+{'eval_loss': 0.3028385639190674, 'eval_accuracy': 0.9109375, 'eval_runtime': 1.1665, 'eval_samples_per_second': 548.672, 'eval_steps_per_second': 8.573, 'epoch': 0.13}
+{'loss': 0.2738, 'grad_norm': 5.348528861999512, 'learning_rate': 2.5249999999999997e-05, 'epoch': 0.15}
+{'eval_loss': 0.2885580062866211, 'eval_accuracy': 0.90625, 'eval_runtime': 1.1764, 'eval_samples_per_second': 544.036, 'eval_steps_per_second': 8.501, 'epoch': 0.15}
+{'loss': 0.2665, 'grad_norm': 6.0303497314453125, 'learning_rate': 2.5e-07, 'epoch': 0.16}
+{'eval_loss': 0.28108081221580505, 'eval_accuracy': 0.9109375, 'eval_runtime': 1.1386, 'eval_samples_per_second': 562.093, 'eval_steps_per_second': 8.783, 'epoch': 0.16}
+{'train_runtime': 104.9134, 'train_samples_per_second': 183.008, 'train_steps_per_second': 11.438, 'train_loss': 0.3106958532333374, 'epoch': 0.16}
+Evaluation Metric: {'accuracy': 0.9109375}
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8000/8000 [00:03<00:00, 2535.15 examples/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:13<00:00, 74.09it/s]
+Inference complete. Predictions saved to inference_output.csv
